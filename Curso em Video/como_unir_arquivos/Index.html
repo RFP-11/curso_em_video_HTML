@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev Alura - Aula 02</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+        Conversometro
+        </h1></br>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+        </br>
+
+        <p class="page-subtitle">
+        Descubra os valores em Real (R$)
+        </p>
+
+        <label for="moeda">Insira um valor em Dolar (US$)</label><br>
+        <input type="number" id="valorDolar" size="2" /><br>
+        <button type="submit" onclick="ConverterDolar()">Converter</button>
+        <h2 id="valorConvertidoDeDolar"></h2>
+
+        <label for="moeda">Insira um valor em Euro (€)</label><br>
+        <input type="number" id="valorEuro" size="2" /><br>
+        <button type="submit" onclick="ConverterEuro()">Converter</button>
+        <h2 id="valorConvertidoDeEuro"></h2>
+        </br>            
+
+        <p class="page-subtitle">
+        Descubra uma distância em Anos-luz
+        </p>
+
+        <label for="moeda">Insira uma distância em quilometros (Km)</label><br>
+        <input type="number" id="valorQuilometros" size="2" /><br>
+        <button type="submit" onclick="ConverterQuilometros()">Converter</button>
+        <h2 id="valorConvertidoDeQuilometros"></h2>
+
+        <label for="moeda">Insira uma distância em Anos-luz</label><br>
+        <input type="number" id="valorAnosLuz" size="2" /><br>
+        <button type="submit" onclick="ConverterAnosLuz()">Converter</button>
+        <h2 id="valorConvertidoDeAnosLuz"></h2>
+        </br>
+
+        <p class="page-subtitle">
+        Convertendo temperaturas (°C, °F, K)
+        </p>
+
+        <label for="moeda">Insira um valor de temperatura (°C)</label><br>
+        <input type="number" id="valorTemperaturaCelsius" size="2" /><br>
+        <button type="submit" onclick="ConverterCelsius()">Converter</button>
+        <h2 id="temperaturaConvertidaDeCelsius"></h2>
+
+        <label for="moeda">Insira um valor de temperatura (°F)</label><br>
+        <input type="number" id="valorTemperaturaFahrenheit" size="2" /><br>
+        <button type="submit" onclick="ConverterFahrenheit()">Converter</button>
+        <h2 id="temperaturaConvertidaDeFahrenheit"></h2>
+
+        <label for="moeda">Insira um valor de temperatura (K)</label><br>
+        <input type="number" id="valorTemperaturaKelvin" size="2" /><br>
+        <button type="submit" onclick="ConverterKelvin()">Converter</button>
+        <h2 id="temperaturaConvertidaDeKelvin"></h2>
+
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    
+    <script src="Script.js"></script>
+</body>
+</html>

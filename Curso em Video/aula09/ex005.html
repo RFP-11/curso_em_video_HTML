@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeriros passos com DOM</title>
+        <style>
+            body{
+                background: rgb(21, 131, 195);
+                color: white;
+                font: Normal 18pt Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Iniciando estudos com DOM</h1>
+        <p>Aqui vai o resultado</br></p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em javaScript.</br></p>
+        <div id="msg"> Clique em mim</div>
+        <div name="texto"> Clique aqui</div>
+        <div class="txt"> Clique aqui</div>
+        <div class="msg"> Vamos Estudar Muito!</div>
+        <div id="texto"> javaScript é legal!</div>
+
+        <script>
+
+            // Vamos ver como podemos selecionar partes da arvore do código para formatar como o javaScript:
+
+            var p1 = document.getElementsByTagName('p')[0]  // [0] para selecionar o 1° parágrafo, se quizer o 2° usa [1] e assim por diante.
+            document.write(p1.innerHTML)  // Escreve na tela o elemento contido na variável p1.
+            p1.style.color = 'blue'  // assim é possível modificar a cor de p1.
+            
+            var corpo = document.body
+            corpo.style.background = 'black'
+            
+            var p2 = document.getElementsByTagName('p')[1]  // podemos fazer a seleção por Tag
+            document.write(p2.innerHTML)  // innerHTML pega o conteúdo junto com as tags ou configurações de formatação
+            document.write(p2.innerText)  // innerText pega apenas o texto sem formatação
+           
+            var d = document.getElementById('msg')  // podemos fazer a seleção por ID
+            d.style.background = 'orange'
+            d.innerText = 'Estou aguardando ser clicado!'
+            
+            var r = document.getElementsByName('texto')[0]  // podemos fazer a seleção por Nome
+            r.innerText = 'Olá!'
+            
+            var b = document.getElementsByClassName('txt')[0]  // podemos fazer a seleção por Classe
+            b.style.color = 'black'
+            b.style.background = 'white'
+
+            var a = document.querySelector('div.msg')  // Usamos '.' quando for referencia a classe
+            a.style.background = 'red'
+
+            var c = document.querySelector('div#texto')  // Usamos '#' quando referencia a ID
+            c.style.background = 'green'
+
+        </script>
+
+    </body>
+</html>
